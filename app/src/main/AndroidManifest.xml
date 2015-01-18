@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mxix.order_system" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AdminActivity"
+            android:label="@string/title_activity_admin" >
+        </activity>
+        <activity
+            android:name=".AdminViewActivity"
+            android:label="@string/title_activity_admin_view"
+            android:parentActivityName=".AdminActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AdminActivity" />
+        </activity>
+        <activity
+            android:name=".AddressActivity"
+            android:label="@string/title_activity_main_activity_continued" >
+        </activity>
+        <activity
+            android:name=".FoodTypeActivity"
+            android:label="@string/title_activity_food_type" >
+        </activity>
+        <activity
+            android:name=".MCActivity"
+            android:label="@string/title_activity_mc_menu" >
+        </activity>
+        <activity
+            android:name=".SnackActivity"
+            android:label="@string/title_activity_snacks_menu" >
+        </activity>
+        <activity
+            android:name=".ThaliActivity"
+            android:label="@string/title_activity_thali_menu" >
+        </activity>
+
+    </application>
+
+</manifest>

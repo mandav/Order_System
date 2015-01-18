@@ -1,0 +1,633 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.mxix.order_system.MCActivity"
+    android:background="@drawable/food"
+    >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Order"
+        android:id="@+id/confirm_mc"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sp_d"
+        android:id="@+id/textView5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:textStyle="bold"
+        android:paddingRight="10dp" />
+    <View style="@style/Divider"
+        android:id="@+id/view2"
+        android:layout_alignBottom="@+id/textView28"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mt_d"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/view2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+    <View style="@style/Divider"
+        android:id="@+id/view3"
+        android:layout_alignBottom="@+id/textView30"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/d_d"
+        android:id="@+id/textView9"
+        android:layout_below="@+id/textView30"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+    <View style="@style/Divider"
+        android:id="@+id/view"
+        android:layout_below="@+id/textView29"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cm_d"
+        android:id="@+id/textView11"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/textView31"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingRight="20dp" />
+    <View style="@style/Divider"
+        android:id="@+id/textView16"
+        android:layout_below="@+id/textView31"
+        android:layout_alignRight="@+id/cc_quantity"
+        android:layout_alignEnd="@+id/cc_quantity" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cc_d"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/cm_quantity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp" />
+    <View style="@style/Divider"
+        android:id="@+id/textView19"
+        android:layout_below="@+id/roti_quantity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fr_d"
+        android:id="@+id/textView13"
+        android:layout_below="@+id/textView18"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+    <View style="@style/Divider"
+        android:id="@+id/textView18"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/roti_d"
+        android:id="@+id/textView14"
+        android:layout_below="@+id/textView17"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+    <View style="@style/Divider"
+        android:id="@+id/textView17"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mm_d"
+        android:id="@+id/textView15"
+        android:layout_below="@+id/textView19"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/sp_quantity"
+        android:textSize="25sp"
+        android:width="50dp"
+        android:layout_above="@+id/view2"
+        android:layout_toRightOf="@+id/textView20"
+        android:layout_toEndOf="@+id/textView20" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/mt_quantity"
+        android:textSize="25sp"
+        android:layout_alignLeft="@+id/sp_quantity"
+        android:layout_alignStart="@+id/sp_quantity"
+        android:layout_alignBottom="@+id/view3"
+        android:layout_below="@+id/sp_quantity"
+        android:layout_alignRight="@+id/sp_quantity"
+        android:layout_alignEnd="@+id/sp_quantity" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/dosa_quantity"
+        android:textSize="25sp"
+        android:layout_alignLeft="@+id/mt_quantity"
+        android:layout_alignStart="@+id/mt_quantity"
+        android:layout_below="@+id/view3"
+        android:layout_alignRight="@+id/mt_quantity"
+        android:layout_alignEnd="@+id/mt_quantity"
+        android:layout_alignBottom="@+id/view" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/cm_quantity"
+        android:textSize="25sp"
+        android:layout_alignLeft="@+id/dosa_quantity"
+        android:layout_alignStart="@+id/dosa_quantity"
+        android:layout_alignTop="@+id/view"
+        android:layout_alignBottom="@+id/textView16"
+        android:layout_alignRight="@+id/dosa_quantity"
+        android:layout_alignEnd="@+id/dosa_quantity" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/cc_quantity"
+        android:textSize="25sp"
+        android:layout_alignLeft="@+id/cm_quantity"
+        android:layout_alignStart="@+id/cm_quantity"
+        android:layout_below="@+id/cm_quantity"
+        android:layout_above="@+id/fr_quantity"
+        android:layout_alignRight="@+id/cm_quantity"
+        android:layout_alignEnd="@+id/cm_quantity" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/fr_quantity"
+        android:textSize="25sp"
+        android:layout_alignBottom="@+id/textView17"
+        android:layout_alignLeft="@+id/cc_quantity"
+        android:layout_alignStart="@+id/cc_quantity"
+        android:layout_below="@+id/textView18"
+        android:layout_alignRight="@+id/cc_quantity"
+        android:layout_alignEnd="@+id/cc_quantity" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/roti_quantity"
+        android:textSize="25sp"
+        android:layout_alignLeft="@+id/fr_quantity"
+        android:layout_alignStart="@+id/fr_quantity"
+        android:layout_below="@+id/fr_quantity"
+        android:layout_alignBottom="@+id/textView34"
+        android:layout_alignRight="@+id/fr_quantity"
+        android:layout_alignEnd="@+id/fr_quantity" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/mm_quantity"
+        android:textSize="25sp"
+        android:layout_alignLeft="@+id/roti_quantity"
+        android:layout_alignStart="@+id/roti_quantity"
+        android:layout_alignTop="@+id/textView19"
+        android:layout_alignRight="@+id/roti_quantity"
+        android:layout_alignEnd="@+id/roti_quantity" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:id="@+id/textView20"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView28"
+        android:layout_toEndOf="@+id/textView28" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:id="@+id/textView21"
+        android:layout_below="@+id/view2"
+        android:layout_toLeftOf="@+id/mt_quantity"
+        android:layout_toStartOf="@+id/mt_quantity"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:id="@+id/textView22"
+        android:layout_below="@+id/view3"
+        android:layout_toLeftOf="@+id/dosa_quantity"
+        android:layout_toStartOf="@+id/dosa_quantity"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:id="@+id/textView23"
+        android:textStyle="bold"
+        android:layout_below="@+id/dosa_quantity"
+        android:layout_alignLeft="@+id/textView22"
+        android:layout_alignStart="@+id/textView22" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:id="@+id/textView24"
+        android:layout_below="@+id/textView16"
+        android:layout_toLeftOf="@+id/cc_quantity"
+        android:layout_toStartOf="@+id/cc_quantity"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:id="@+id/textView25"
+        android:layout_below="@+id/textView18"
+        android:layout_toLeftOf="@+id/fr_quantity"
+        android:layout_toStartOf="@+id/fr_quantity"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:id="@+id/textView26"
+        android:layout_below="@+id/textView17"
+        android:layout_toLeftOf="@+id/roti_quantity"
+        android:layout_toStartOf="@+id/roti_quantity"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:id="@+id/textView27"
+        android:layout_below="@+id/textView19"
+        android:layout_toLeftOf="@+id/mm_quantity"
+        android:layout_toStartOf="@+id/mm_quantity"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cost :"
+        android:id="@+id/textView28"
+        android:paddingRight="15dp"
+        android:paddingBottom="28dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView11"
+        android:layout_toEndOf="@+id/textView11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cost :"
+        android:id="@+id/textView30"
+        android:paddingRight="30dp"
+        android:paddingBottom="28dp"
+        android:textSize="12sp"
+        android:layout_below="@+id/view2"
+        android:layout_alignLeft="@+id/textView28"
+        android:layout_alignStart="@+id/textView28"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cost :"
+        android:id="@+id/textView29"
+        android:paddingRight="30dp"
+        android:paddingBottom="28dp"
+        android:textSize="12sp"
+        android:layout_below="@+id/view3"
+        android:layout_alignRight="@+id/textView30"
+        android:layout_alignEnd="@+id/textView30"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cost :"
+        android:id="@+id/textView31"
+        android:paddingRight="30dp"
+        android:paddingBottom="28dp"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/textView23"
+        android:layout_alignLeft="@+id/textView29"
+        android:layout_alignStart="@+id/textView29" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cost :"
+        android:id="@+id/textView32"
+        android:paddingRight="30dp"
+        android:paddingBottom="28dp"
+        android:textSize="12sp"
+        android:layout_below="@+id/textView16"
+        android:layout_alignRight="@+id/textView31"
+        android:layout_alignEnd="@+id/textView31"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cost :"
+        android:id="@+id/textView33"
+        android:paddingRight="30dp"
+        android:paddingBottom="28dp"
+        android:textSize="12sp"
+        android:layout_alignTop="@+id/textView25"
+        android:layout_alignRight="@+id/textView32"
+        android:layout_alignEnd="@+id/textView32"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cost :"
+        android:id="@+id/textView34"
+        android:paddingRight="30dp"
+        android:paddingBottom="28dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/textView26"
+        android:layout_alignLeft="@+id/textView33"
+        android:layout_alignStart="@+id/textView33" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cost :"
+        android:id="@+id/textView35"
+        android:paddingRight="30dp"
+        android:paddingBottom="28dp"
+        android:textSize="12sp"
+        android:layout_alignTop="@+id/textView27"
+        android:layout_alignLeft="@+id/textView34"
+        android:layout_alignStart="@+id/textView34"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sp"
+        android:id="@+id/textView36"
+        android:layout_below="@+id/textView20"
+        android:layout_alignLeft="@+id/textView28"
+        android:layout_alignStart="@+id/textView28" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mt"
+        android:id="@+id/textView37"
+        android:layout_below="@+id/textView6"
+        android:layout_alignLeft="@+id/textView30"
+        android:layout_alignStart="@+id/textView30" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dosa"
+        android:id="@+id/textView38"
+        android:layout_below="@+id/textView22"
+        android:layout_alignRight="@+id/textView37"
+        android:layout_alignEnd="@+id/textView37" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cm"
+        android:id="@+id/textView39"
+        android:layout_below="@+id/textView11"
+        android:layout_alignLeft="@+id/textView31"
+        android:layout_alignStart="@+id/textView31" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cc"
+        android:id="@+id/textView40"
+        android:layout_below="@+id/textView24"
+        android:layout_alignLeft="@+id/textView32"
+        android:layout_alignStart="@+id/textView32" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fr"
+        android:id="@+id/textView41"
+        android:layout_alignBottom="@+id/textView33"
+        android:layout_alignRight="@+id/textView40"
+        android:layout_alignEnd="@+id/textView40" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/roti"
+        android:id="@+id/textView42"
+        android:layout_below="@+id/textView26"
+        android:layout_alignRight="@+id/textView41"
+        android:layout_alignEnd="@+id/textView41" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mm"
+        android:id="@+id/textView43"
+        android:layout_below="@+id/textView15"
+        android:layout_alignLeft="@+id/textView41"
+        android:layout_alignStart="@+id/textView41" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/total"
+        android:layout_alignRight="@+id/cost_mm"
+        android:layout_alignEnd="@+id/cost_mm"
+        android:textStyle="bold"
+        android:paddingRight="20dp"
+        android:layout_alignBottom="@+id/textView48"
+        android:layout_alignTop="@+id/textView48"
+        android:layout_toRightOf="@+id/textView48"
+        android:layout_toEndOf="@+id/textView48" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cost_sp"
+        android:layout_alignBottom="@+id/textView36"
+        android:layout_toRightOf="@+id/sp_quantity"
+        android:layout_alignRight="@+id/cost_mt"
+        android:layout_alignEnd="@+id/cost_mt"
+        android:text="150"
+        android:layout_below="@+id/textView20"
+        android:paddingLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="200"
+        android:id="@+id/cost_mt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/textView37"
+        android:layout_toRightOf="@+id/mt_quantity"
+        android:layout_toEndOf="@+id/mt_quantity"
+        android:layout_below="@+id/textView21"
+        android:paddingLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cost_dosa"
+        android:layout_below="@+id/textView22"
+        android:layout_toRightOf="@+id/dosa_quantity"
+        android:text="80"
+        android:layout_alignRight="@+id/total"
+        android:layout_alignEnd="@+id/total"
+        android:paddingLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="110"
+        android:id="@+id/cost_cm"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/textView23"
+        android:layout_toRightOf="@+id/cm_quantity"
+        android:layout_alignRight="@+id/cost_dosa"
+        android:layout_alignEnd="@+id/cost_dosa" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="200"
+        android:id="@+id/cost_cc"
+        android:layout_alignBottom="@+id/textView32"
+        android:layout_toRightOf="@+id/cc_quantity"
+        android:layout_alignRight="@+id/cost_fr"
+        android:layout_alignEnd="@+id/cost_fr"
+        android:paddingLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:id="@+id/cost_fr"
+        android:textAlignment="center"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/textView33"
+        android:layout_alignLeft="@+id/total"
+        android:layout_alignStart="@+id/total"
+        android:paddingLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        android:id="@+id/cost_roti"
+        android:layout_toRightOf="@+id/roti_quantity"
+        android:layout_alignBottom="@+id/textView42"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="textEnd"
+        android:paddingLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50"
+        android:id="@+id/cost_mm"
+        android:paddingLeft="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/textView35"
+        android:layout_toRightOf="@+id/textView48"
+        android:layout_toEndOf="@+id/textView48" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:id="@+id/total_value"
+        android:layout_above="@+id/confirm_mc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:id="@+id/textView48"
+        android:textStyle="bold"
+        android:paddingRight="20dp"
+        android:layout_above="@+id/total_value"
+        android:layout_alignLeft="@+id/mm_quantity"
+        android:layout_alignStart="@+id/mm_quantity" />
+
+</RelativeLayout>

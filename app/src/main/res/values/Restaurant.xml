@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xlink="http://schemas.android.com/apk/res/android">
+    <string-array name="Restaurant">
+        <item name="Barbeque Nation" >Barbeque Nation -Jayanagar
+
+       </item>
+        <item name="Shantinagar">Shantinagar Restaurent -BTM Layout </item>
+        <item name="Marwa">Marwa -BTM 16th Main</item>
+        <item name="Biryani House">Biryani House -BTM 16th Main</item>
+        </string-array>
+</resources>
